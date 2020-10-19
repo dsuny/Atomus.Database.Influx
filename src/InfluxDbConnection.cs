@@ -21,8 +21,8 @@ namespace Atomus.Database
         internal string Password { get; set; }
         internal DbCommand dbCommand;
 
-        //MS-SQL : Data Source=atomus.dsun.kr,4004;Initial Catalog=DBNAME;Persist Security Info=True;User ID=;Password=
-        //Influx : Data Source=http://atomus.dsun.kr:4004;Initial Catalog=DBNAME;Influx Db Version=Latest;User ID=;Password=
+        //MS-SQL : Data Source=atomus.dsun.kr;Initial Catalog=DBNAME;Persist Security Info=True;User ID=;Password=
+        //Influx : Data Source=http://atomus.dsun.kr;Initial Catalog=DBNAME;Influx Db Version=Latest;User ID=;Password=
         public override string ConnectionString
         {
             get
