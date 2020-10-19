@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{312A2D3C-CED3-4B7A-B019-C81931DA0BB0}"
+	ProjectSection(SolutionItems) = preProject
+		src\Influx.cs = src\Influx.cs
+		src\InfluxDataAdapter.cs = src\InfluxDataAdapter.cs
+		src\InfluxDbCommand.cs = src\InfluxDbCommand.cs
+		src\InfluxDbConnection.cs = src\InfluxDbConnection.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atomus.Database.Influx(dotNet)", "dotNet\Atomus.Database.Influx(dotNet).csproj", "{5CEB56FB-ED7C-482E-B4CD-44372FF5E3B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atomus.Database.Influx(dotNetCore)", "dotNetCore\Atomus.Database.Influx(dotNetCore).csproj", "{C41E8BB9-FD00-41B0-93DF-3881E480E974}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atomus.Database.Influx(dotNetStandard)", "dotNetStandard\Atomus.Database.Influx(dotNetStandard).csproj", "{52283C50-C4FA-4AB3-9177-3477F8923A2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CEB56FB-ED7C-482E-B4CD-44372FF5E3B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEB56FB-ED7C-482E-B4CD-44372FF5E3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEB56FB-ED7C-482E-B4CD-44372FF5E3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEB56FB-ED7C-482E-B4CD-44372FF5E3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C41E8BB9-FD00-41B0-93DF-3881E480E974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41E8BB9-FD00-41B0-93DF-3881E480E974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41E8BB9-FD00-41B0-93DF-3881E480E974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41E8BB9-FD00-41B0-93DF-3881E480E974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52283C50-C4FA-4AB3-9177-3477F8923A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52283C50-C4FA-4AB3-9177-3477F8923A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52283C50-C4FA-4AB3-9177-3477F8923A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52283C50-C4FA-4AB3-9177-3477F8923A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FD3029E-39B3-4D53-B4B2-0740B4806FFE}
+	EndGlobalSection
+EndGlobal

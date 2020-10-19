@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Atomus.Database.Influx</AssemblyName>
+    <RootNamespace>Atomus</RootNamespace>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Product>Atomus Framework in .Net Core 3.1</Product>
+    <Description>Atomus Framework in .Net Core 3.1</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Database.Influx</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Database.Influx</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Database Influx AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\Influx.cs" Link="Influx.cs" />
+    <Compile Include="..\src\InfluxDataAdapter.cs" Link="InfluxDataAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\src\InfluxDbCommand.cs" Link="InfluxDbCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\src\InfluxDbConnection.cs" Link="InfluxDbConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetCore" Version="1.0.2" />
+    <PackageReference Include="InfluxData.Net" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

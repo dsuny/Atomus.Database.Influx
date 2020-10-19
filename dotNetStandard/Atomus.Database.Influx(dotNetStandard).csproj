@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <AssemblyName>Atomus.Database.Influx</AssemblyName>
+    <Authors>DSUN</Authors>
+    <Product>Atomus Framework in .Net Standard 2.0</Product>
+    <Description>Atomus Framework in .Net Standard 2.0</Description>
+    <Company>Atomus</Company>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Database.Influx</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Database.Influx</RepositoryUrl>
+    <PackageIcon>atomus.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Atomus Atomus.Core Database Influx AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\src\Influx.cs" Link="Influx.cs" />
+    <Compile Include="..\src\InfluxDataAdapter.cs" Link="InfluxDataAdapter.cs" />
+    <Compile Include="..\src\InfluxDbCommand.cs" Link="InfluxDbCommand.cs" />
+    <Compile Include="..\src\InfluxDbConnection.cs" Link="InfluxDbConnection.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetStandard" Version="1.0.2.2" />
+    <PackageReference Include="InfluxData.Net" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
