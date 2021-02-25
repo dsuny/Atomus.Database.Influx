@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Atomus.Core.dotNet">
-      <Version>1.0.2</Version>
+      <Version>1.0.3.2</Version>
     </PackageReference>
     <PackageReference Include="InfluxData.Net">
       <Version>8.0.1</Version>

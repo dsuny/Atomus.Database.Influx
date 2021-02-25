@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Atomus.Core.dotNetCore" Version="1.0.2" />
+    <PackageReference Include="Atomus.Core.dotNetCore" Version="1.0.3.2" />
     <PackageReference Include="InfluxData.Net" Version="8.0.1" />
   </ItemGroup>
 
