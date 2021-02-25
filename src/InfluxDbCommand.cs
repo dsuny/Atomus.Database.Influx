@@ -1,14 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
-//using System.Data.SqlClient;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web.UI.WebControls.WebParts;
 
 namespace Atomus.Database
 {
 
     public class InfluxDbCommand : DbCommand, ICore
     {
-        //private readonly SqlCommand sqlCommand = new SqlCommand();
+        private readonly SqlCommand sqlCommand = new SqlCommand();
 
         private DbConnection dbConnection;
         private int Timeout;
@@ -31,8 +37,8 @@ namespace Atomus.Database
         {
             get
             {
-                //return this.sqlCommand.CommandType;
-                return CommandType.Text;
+                return this.sqlCommand.CommandType;
+                //return CommandType.Text;
             }
             set
             {
@@ -58,8 +64,8 @@ namespace Atomus.Database
         {
             get
             {
-                //return this.sqlCommand.Parameters;
-                return null;
+                return this.sqlCommand.Parameters;
+                //return null;
             }
         }
 
@@ -88,8 +94,8 @@ namespace Atomus.Database
 
         protected override DbParameter CreateDbParameter()
         {
-            //return this.sqlCommand.CreateParameter();
-            return null;
+            return this.sqlCommand.CreateParameter();
+            //return null;
         }
 
         protected override DbDataReader ExecuteDbDataReader(CommandBehavior behavior)

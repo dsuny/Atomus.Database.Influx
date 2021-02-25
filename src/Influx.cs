@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data.Common;
-//using System.Data.SqlClient;
+using System.Data.SqlClient;
 
 namespace Atomus.Database
 {
@@ -27,18 +27,18 @@ namespace Atomus.Database
 
         DbParameter IDatabase.AddParameter(string parameterName, DbType dbType, int size)
         {
-            //DbCommand sqlCommand;
+            DbCommand sqlCommand;
 
             try
             {
-                //sqlCommand = this.sqlDataAdapter.SelectCommand;
+                sqlCommand = this.sqlDataAdapter.SelectCommand;
 
-                //if (size == 0)
-                //    return ((SqlParameterCollection)sqlCommand.Parameters).Add(parameterName, this.DbTypeConvert(dbType));
-                //else
-                //    return ((SqlParameterCollection)sqlCommand.Parameters).Add(parameterName, this.DbTypeConvert(dbType), size);
+                if (size == 0)
+                    return ((SqlParameterCollection)sqlCommand.Parameters).Add(parameterName, this.DbTypeConvert(dbType));
+                else
+                    return ((SqlParameterCollection)sqlCommand.Parameters).Add(parameterName, this.DbTypeConvert(dbType), size);
 
-                return null;
+                //return null;
             }
             catch (AtomusException exception)
             {
